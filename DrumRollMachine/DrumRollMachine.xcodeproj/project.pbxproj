@@ -1,0 +1,990 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96D945CE29D7955800D9C891 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945CD29D7955800D9C891 /* ContentView.swift */; };
+		96D945D229D7955800D9C891 /* ViewControllerRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945D129D7955800D9C891 /* ViewControllerRepresentable.swift */; };
+		96D945D529D7955800D9C891 /* Synth.aif in Resources */ = {isa = PBXBuildFile; fileRef = 96D945D429D7955800D9C891 /* Synth.aif */; };
+		96D945D729D7955800D9C891 /* SimplePlayEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945D629D7955800D9C891 /* SimplePlayEngine.swift */; };
+		96D945DA29D7955800D9C891 /* MIDIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945D929D7955800D9C891 /* MIDIManager.swift */; };
+		96D945DC29D7955800D9C891 /* TypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945DB29D7955800D9C891 /* TypeAliases.swift */; };
+		96D945DF29D7955800D9C891 /* StringHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945DE29D7955800D9C891 /* StringHelpers.swift */; };
+		96D945E229D7955800D9C891 /* AudioUnitHostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945E129D7955800D9C891 /* AudioUnitHostModel.swift */; };
+		96D945E429D7955800D9C891 /* AudioUnitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945E329D7955800D9C891 /* AudioUnitViewModel.swift */; };
+		96D945E629D7955800D9C891 /* DrumRollMachineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945E529D7955800D9C891 /* DrumRollMachineApp.swift */; };
+		96D945E929D7955900D9C891 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D945E829D7955900D9C891 /* Preview Assets.xcassets */; };
+		96D945EB29D7955A00D9C891 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96D945EA29D7955A00D9C891 /* Assets.xcassets */; };
+		96D945F629D7955A00D9C891 /* DrumRollMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945F529D7955A00D9C891 /* DrumRollMachineTests.swift */; };
+		96D9460029D7955A00D9C891 /* DrumRollMachineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D945FF29D7955A00D9C891 /* DrumRollMachineUITests.swift */; };
+		96D9460229D7955A00D9C891 /* DrumRollMachineUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9460129D7955A00D9C891 /* DrumRollMachineUITestsLaunchTests.swift */; };
+		96D9460829D7955A00D9C891 /* DrumRollMachineExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 96D9460729D7955A00D9C891 /* DrumRollMachineExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		96D9460D29D7955A00D9C891 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96D9460C29D7955A00D9C891 /* README.md */; };
+		96D9461229D7955A00D9C891 /* ParameterSpecBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9461129D7955A00D9C891 /* ParameterSpecBase.swift */; };
+		96D9461529D7955A00D9C891 /* CrossPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9461429D7955A00D9C891 /* CrossPlatform.swift */; };
+		96D9461729D7955A00D9C891 /* String+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9461629D7955A00D9C891 /* String+Utils.swift */; };
+		96D9461B29D7955A00D9C891 /* DrumRollMachineExtensionAudioUnit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96D9461A29D7955A00D9C891 /* DrumRollMachineExtensionAudioUnit.mm */; };
+		96D9461E29D7955A00D9C891 /* DrumRollMachineExtensionAUProcessHelper.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 96D9461D29D7955A00D9C891 /* DrumRollMachineExtensionAUProcessHelper.hpp */; };
+		96D9462229D7955A00D9C891 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9462129D7955A00D9C891 /* Parameters.swift */; };
+		96D9462529D7955A00D9C891 /* DrumRollMachineExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 96D9462429D7955A00D9C891 /* DrumRollMachineExtensionDSPKernel.hpp */; };
+		96D9462829D7955A00D9C891 /* DrumRollMachineExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9462729D7955A00D9C891 /* DrumRollMachineExtensionMainView.swift */; };
+		96D9462A29D7955A00D9C891 /* MomentaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9462929D7955A00D9C891 /* MomentaryButton.swift */; };
+		96D9462C29D7955A00D9C891 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9462B29D7955A00D9C891 /* ParameterSlider.swift */; };
+		96D9463129D7955A00D9C891 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96D9462F29D7955A00D9C891 /* AudioUnitViewController.xib */; };
+		96D9463329D7955A00D9C891 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9463229D7955A00D9C891 /* ObservableAUParameter.swift */; };
+		96D9463529D7955A00D9C891 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D9463429D7955A00D9C891 /* AudioUnitViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96D945F229D7955A00D9C891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96D945C229D7955800D9C891 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96D945C929D7955800D9C891;
+			remoteInfo = DrumRollMachine;
+		};
+		96D945FC29D7955A00D9C891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96D945C229D7955800D9C891 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96D945C929D7955800D9C891;
+			remoteInfo = DrumRollMachine;
+		};
+		96D9460929D7955A00D9C891 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96D945C229D7955800D9C891 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96D9460629D7955A00D9C891;
+			remoteInfo = DrumRollMachineExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96D9463C29D7955A00D9C891 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				96D9460829D7955A00D9C891 /* DrumRollMachineExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		96D945CA29D7955800D9C891 /* DrumRollMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrumRollMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D945CD29D7955800D9C891 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96D945D129D7955800D9C891 /* ViewControllerRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRepresentable.swift; sourceTree = "<group>"; };
+		96D945D429D7955800D9C891 /* Synth.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Synth.aif; sourceTree = "<group>"; };
+		96D945D629D7955800D9C891 /* SimplePlayEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePlayEngine.swift; sourceTree = "<group>"; };
+		96D945D929D7955800D9C891 /* MIDIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIDIManager.swift; sourceTree = "<group>"; };
+		96D945DB29D7955800D9C891 /* TypeAliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeAliases.swift; sourceTree = "<group>"; };
+		96D945DE29D7955800D9C891 /* StringHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelpers.swift; sourceTree = "<group>"; };
+		96D945E129D7955800D9C891 /* AudioUnitHostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitHostModel.swift; sourceTree = "<group>"; };
+		96D945E329D7955800D9C891 /* AudioUnitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewModel.swift; sourceTree = "<group>"; };
+		96D945E529D7955800D9C891 /* DrumRollMachineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumRollMachineApp.swift; sourceTree = "<group>"; };
+		96D945E829D7955900D9C891 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		96D945EA29D7955A00D9C891 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96D945EC29D7955A00D9C891 /* DrumRollMachine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DrumRollMachine.entitlements; sourceTree = "<group>"; };
+		96D945F129D7955A00D9C891 /* DrumRollMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrumRollMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D945F529D7955A00D9C891 /* DrumRollMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumRollMachineTests.swift; sourceTree = "<group>"; };
+		96D945FB29D7955A00D9C891 /* DrumRollMachineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrumRollMachineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D945FF29D7955A00D9C891 /* DrumRollMachineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumRollMachineUITests.swift; sourceTree = "<group>"; };
+		96D9460129D7955A00D9C891 /* DrumRollMachineUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumRollMachineUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96D9460729D7955A00D9C891 /* DrumRollMachineExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DrumRollMachineExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D9460C29D7955A00D9C891 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		96D9460F29D7955A00D9C891 /* DrumRollMachineExtension-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrumRollMachineExtension-Bridging-Header.h"; sourceTree = "<group>"; };
+		96D9461129D7955A00D9C891 /* ParameterSpecBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSpecBase.swift; sourceTree = "<group>"; };
+		96D9461429D7955A00D9C891 /* CrossPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossPlatform.swift; sourceTree = "<group>"; };
+		96D9461629D7955A00D9C891 /* String+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Utils.swift"; sourceTree = "<group>"; };
+		96D9461929D7955A00D9C891 /* DrumRollMachineExtensionAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrumRollMachineExtensionAudioUnit.h; sourceTree = "<group>"; };
+		96D9461A29D7955A00D9C891 /* DrumRollMachineExtensionAudioUnit.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = DrumRollMachineExtensionAudioUnit.mm; sourceTree = "<group>"; };
+		96D9461D29D7955A00D9C891 /* DrumRollMachineExtensionAUProcessHelper.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DrumRollMachineExtensionAUProcessHelper.hpp; sourceTree = "<group>"; };
+		96D9462029D7955A00D9C891 /* DrumRollMachineExtensionParameterAddresses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrumRollMachineExtensionParameterAddresses.h; sourceTree = "<group>"; };
+		96D9462129D7955A00D9C891 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		96D9462429D7955A00D9C891 /* DrumRollMachineExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DrumRollMachineExtensionDSPKernel.hpp; sourceTree = "<group>"; };
+		96D9462729D7955A00D9C891 /* DrumRollMachineExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumRollMachineExtensionMainView.swift; sourceTree = "<group>"; };
+		96D9462929D7955A00D9C891 /* MomentaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomentaryButton.swift; sourceTree = "<group>"; };
+		96D9462B29D7955A00D9C891 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
+		96D9463029D7955A00D9C891 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
+		96D9463229D7955A00D9C891 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
+		96D9463429D7955A00D9C891 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		96D9463629D7955A00D9C891 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96D945C729D7955800D9C891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D945EE29D7955A00D9C891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D945F829D7955A00D9C891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D9460429D7955A00D9C891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96D945C129D7955800D9C891 = {
+			isa = PBXGroup;
+			children = (
+				96D945CC29D7955800D9C891 /* DrumRollMachine */,
+				96D945F429D7955A00D9C891 /* DrumRollMachineTests */,
+				96D945FE29D7955A00D9C891 /* DrumRollMachineUITests */,
+				96D9460B29D7955A00D9C891 /* DrumRollMachineExtension */,
+				96D945CB29D7955800D9C891 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96D945CB29D7955800D9C891 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96D945CA29D7955800D9C891 /* DrumRollMachine.app */,
+				96D945F129D7955A00D9C891 /* DrumRollMachineTests.xctest */,
+				96D945FB29D7955A00D9C891 /* DrumRollMachineUITests.xctest */,
+				96D9460729D7955A00D9C891 /* DrumRollMachineExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96D945CC29D7955800D9C891 /* DrumRollMachine */ = {
+			isa = PBXGroup;
+			children = (
+				96D945CD29D7955800D9C891 /* ContentView.swift */,
+				96D945E529D7955800D9C891 /* DrumRollMachineApp.swift */,
+				96D945EA29D7955A00D9C891 /* Assets.xcassets */,
+				96D945EC29D7955A00D9C891 /* DrumRollMachine.entitlements */,
+				96D945CF29D7955800D9C891 /* Common */,
+				96D945E029D7955800D9C891 /* Model */,
+				96D945E729D7955900D9C891 /* Preview Content */,
+			);
+			path = DrumRollMachine;
+			sourceTree = "<group>";
+		};
+		96D945CF29D7955800D9C891 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				96D945DB29D7955800D9C891 /* TypeAliases.swift */,
+				96D945D029D7955800D9C891 /* UI */,
+				96D945D329D7955800D9C891 /* Audio */,
+				96D945D829D7955800D9C891 /* MIDI */,
+				96D945DD29D7955800D9C891 /* String */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		96D945D029D7955800D9C891 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				96D945D129D7955800D9C891 /* ViewControllerRepresentable.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		96D945D329D7955800D9C891 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				96D945D429D7955800D9C891 /* Synth.aif */,
+				96D945D629D7955800D9C891 /* SimplePlayEngine.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		96D945D829D7955800D9C891 /* MIDI */ = {
+			isa = PBXGroup;
+			children = (
+				96D945D929D7955800D9C891 /* MIDIManager.swift */,
+			);
+			path = MIDI;
+			sourceTree = "<group>";
+		};
+		96D945DD29D7955800D9C891 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				96D945DE29D7955800D9C891 /* StringHelpers.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		96D945E029D7955800D9C891 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				96D945E129D7955800D9C891 /* AudioUnitHostModel.swift */,
+				96D945E329D7955800D9C891 /* AudioUnitViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		96D945E729D7955900D9C891 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				96D945E829D7955900D9C891 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		96D945F429D7955A00D9C891 /* DrumRollMachineTests */ = {
+			isa = PBXGroup;
+			children = (
+				96D945F529D7955A00D9C891 /* DrumRollMachineTests.swift */,
+			);
+			path = DrumRollMachineTests;
+			sourceTree = "<group>";
+		};
+		96D945FE29D7955A00D9C891 /* DrumRollMachineUITests */ = {
+			isa = PBXGroup;
+			children = (
+				96D945FF29D7955A00D9C891 /* DrumRollMachineUITests.swift */,
+				96D9460129D7955A00D9C891 /* DrumRollMachineUITestsLaunchTests.swift */,
+			);
+			path = DrumRollMachineUITests;
+			sourceTree = "<group>";
+		};
+		96D9460B29D7955A00D9C891 /* DrumRollMachineExtension */ = {
+			isa = PBXGroup;
+			children = (
+				96D9460C29D7955A00D9C891 /* README.md */,
+				96D9463629D7955A00D9C891 /* Info.plist */,
+				96D9460E29D7955A00D9C891 /* Common */,
+				96D9461F29D7955A00D9C891 /* Parameters */,
+				96D9462329D7955A00D9C891 /* DSP */,
+				96D9462629D7955A00D9C891 /* UI */,
+			);
+			path = DrumRollMachineExtension;
+			sourceTree = "<group>";
+		};
+		96D9460E29D7955A00D9C891 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				96D9460F29D7955A00D9C891 /* DrumRollMachineExtension-Bridging-Header.h */,
+				96D9461029D7955A00D9C891 /* Parameters */,
+				96D9461329D7955A00D9C891 /* Utility */,
+				96D9461829D7955A00D9C891 /* Audio Unit */,
+				96D9461C29D7955A00D9C891 /* DSP */,
+				96D9462D29D7955A00D9C891 /* UI */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		96D9461029D7955A00D9C891 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				96D9461129D7955A00D9C891 /* ParameterSpecBase.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		96D9461329D7955A00D9C891 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				96D9461429D7955A00D9C891 /* CrossPlatform.swift */,
+				96D9461629D7955A00D9C891 /* String+Utils.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		96D9461829D7955A00D9C891 /* Audio Unit */ = {
+			isa = PBXGroup;
+			children = (
+				96D9461929D7955A00D9C891 /* DrumRollMachineExtensionAudioUnit.h */,
+				96D9461A29D7955A00D9C891 /* DrumRollMachineExtensionAudioUnit.mm */,
+			);
+			path = "Audio Unit";
+			sourceTree = "<group>";
+		};
+		96D9461C29D7955A00D9C891 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				96D9461D29D7955A00D9C891 /* DrumRollMachineExtensionAUProcessHelper.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		96D9461F29D7955A00D9C891 /* Parameters */ = {
+			isa = PBXGroup;
+			children = (
+				96D9462029D7955A00D9C891 /* DrumRollMachineExtensionParameterAddresses.h */,
+				96D9462129D7955A00D9C891 /* Parameters.swift */,
+			);
+			path = Parameters;
+			sourceTree = "<group>";
+		};
+		96D9462329D7955A00D9C891 /* DSP */ = {
+			isa = PBXGroup;
+			children = (
+				96D9462429D7955A00D9C891 /* DrumRollMachineExtensionDSPKernel.hpp */,
+			);
+			path = DSP;
+			sourceTree = "<group>";
+		};
+		96D9462629D7955A00D9C891 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				96D9462729D7955A00D9C891 /* DrumRollMachineExtensionMainView.swift */,
+				96D9462929D7955A00D9C891 /* MomentaryButton.swift */,
+				96D9462B29D7955A00D9C891 /* ParameterSlider.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		96D9462D29D7955A00D9C891 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				96D9463229D7955A00D9C891 /* ObservableAUParameter.swift */,
+				96D9463429D7955A00D9C891 /* AudioUnitViewController.swift */,
+				96D9462E29D7955A00D9C891 /* Base.lproj */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		96D9462E29D7955A00D9C891 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				96D9462F29D7955A00D9C891 /* AudioUnitViewController.xib */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96D945C929D7955800D9C891 /* DrumRollMachine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96D9463D29D7955A00D9C891 /* Build configuration list for PBXNativeTarget "DrumRollMachine" */;
+			buildPhases = (
+				96D945C629D7955800D9C891 /* Sources */,
+				96D945C729D7955800D9C891 /* Frameworks */,
+				96D945C829D7955800D9C891 /* Resources */,
+				96D9463C29D7955A00D9C891 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96D9460A29D7955A00D9C891 /* PBXTargetDependency */,
+			);
+			name = DrumRollMachine;
+			productName = DrumRollMachine;
+			productReference = 96D945CA29D7955800D9C891 /* DrumRollMachine.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96D945F029D7955A00D9C891 /* DrumRollMachineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96D9464029D7955A00D9C891 /* Build configuration list for PBXNativeTarget "DrumRollMachineTests" */;
+			buildPhases = (
+				96D945ED29D7955A00D9C891 /* Sources */,
+				96D945EE29D7955A00D9C891 /* Frameworks */,
+				96D945EF29D7955A00D9C891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96D945F329D7955A00D9C891 /* PBXTargetDependency */,
+			);
+			name = DrumRollMachineTests;
+			productName = DrumRollMachineTests;
+			productReference = 96D945F129D7955A00D9C891 /* DrumRollMachineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		96D945FA29D7955A00D9C891 /* DrumRollMachineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96D9464329D7955A00D9C891 /* Build configuration list for PBXNativeTarget "DrumRollMachineUITests" */;
+			buildPhases = (
+				96D945F729D7955A00D9C891 /* Sources */,
+				96D945F829D7955A00D9C891 /* Frameworks */,
+				96D945F929D7955A00D9C891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96D945FD29D7955A00D9C891 /* PBXTargetDependency */,
+			);
+			name = DrumRollMachineUITests;
+			productName = DrumRollMachineUITests;
+			productReference = 96D945FB29D7955A00D9C891 /* DrumRollMachineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		96D9460629D7955A00D9C891 /* DrumRollMachineExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96D9463929D7955A00D9C891 /* Build configuration list for PBXNativeTarget "DrumRollMachineExtension" */;
+			buildPhases = (
+				96D9460329D7955A00D9C891 /* Sources */,
+				96D9460429D7955A00D9C891 /* Frameworks */,
+				96D9460529D7955A00D9C891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrumRollMachineExtension;
+			productName = DrumRollMachineExtension;
+			productReference = 96D9460729D7955A00D9C891 /* DrumRollMachineExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96D945C229D7955800D9C891 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					96D945C929D7955800D9C891 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					96D945F029D7955A00D9C891 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 96D945C929D7955800D9C891;
+					};
+					96D945FA29D7955A00D9C891 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 96D945C929D7955800D9C891;
+					};
+					96D9460629D7955A00D9C891 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 96D945C529D7955800D9C891 /* Build configuration list for PBXProject "DrumRollMachine" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96D945C129D7955800D9C891;
+			productRefGroup = 96D945CB29D7955800D9C891 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96D945C929D7955800D9C891 /* DrumRollMachine */,
+				96D945F029D7955A00D9C891 /* DrumRollMachineTests */,
+				96D945FA29D7955A00D9C891 /* DrumRollMachineUITests */,
+				96D9460629D7955A00D9C891 /* DrumRollMachineExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96D945C829D7955800D9C891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D945E929D7955900D9C891 /* Preview Assets.xcassets in Resources */,
+				96D945EB29D7955A00D9C891 /* Assets.xcassets in Resources */,
+				96D945D529D7955800D9C891 /* Synth.aif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D945EF29D7955A00D9C891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D945F929D7955A00D9C891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D9460529D7955A00D9C891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D9460D29D7955A00D9C891 /* README.md in Resources */,
+				96D9463129D7955A00D9C891 /* AudioUnitViewController.xib in Resources */,
+				96D9461E29D7955A00D9C891 /* DrumRollMachineExtensionAUProcessHelper.hpp in Resources */,
+				96D9462529D7955A00D9C891 /* DrumRollMachineExtensionDSPKernel.hpp in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96D945C629D7955800D9C891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D945E229D7955800D9C891 /* AudioUnitHostModel.swift in Sources */,
+				96D945E429D7955800D9C891 /* AudioUnitViewModel.swift in Sources */,
+				96D945CE29D7955800D9C891 /* ContentView.swift in Sources */,
+				96D945E629D7955800D9C891 /* DrumRollMachineApp.swift in Sources */,
+				96D945D229D7955800D9C891 /* ViewControllerRepresentable.swift in Sources */,
+				96D945DF29D7955800D9C891 /* StringHelpers.swift in Sources */,
+				96D945DA29D7955800D9C891 /* MIDIManager.swift in Sources */,
+				96D945DC29D7955800D9C891 /* TypeAliases.swift in Sources */,
+				96D945D729D7955800D9C891 /* SimplePlayEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D945ED29D7955A00D9C891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D945F629D7955A00D9C891 /* DrumRollMachineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D945F729D7955A00D9C891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D9460029D7955A00D9C891 /* DrumRollMachineUITests.swift in Sources */,
+				96D9460229D7955A00D9C891 /* DrumRollMachineUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D9460329D7955A00D9C891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D9462829D7955A00D9C891 /* DrumRollMachineExtensionMainView.swift in Sources */,
+				96D9462229D7955A00D9C891 /* Parameters.swift in Sources */,
+				96D9462A29D7955A00D9C891 /* MomentaryButton.swift in Sources */,
+				96D9463329D7955A00D9C891 /* ObservableAUParameter.swift in Sources */,
+				96D9461229D7955A00D9C891 /* ParameterSpecBase.swift in Sources */,
+				96D9463529D7955A00D9C891 /* AudioUnitViewController.swift in Sources */,
+				96D9462C29D7955A00D9C891 /* ParameterSlider.swift in Sources */,
+				96D9461B29D7955A00D9C891 /* DrumRollMachineExtensionAudioUnit.mm in Sources */,
+				96D9461529D7955A00D9C891 /* CrossPlatform.swift in Sources */,
+				96D9461729D7955A00D9C891 /* String+Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96D945F329D7955A00D9C891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96D945C929D7955800D9C891 /* DrumRollMachine */;
+			targetProxy = 96D945F229D7955A00D9C891 /* PBXContainerItemProxy */;
+		};
+		96D945FD29D7955A00D9C891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96D945C929D7955800D9C891 /* DrumRollMachine */;
+			targetProxy = 96D945FC29D7955A00D9C891 /* PBXContainerItemProxy */;
+		};
+		96D9460A29D7955A00D9C891 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96D9460629D7955A00D9C891 /* DrumRollMachineExtension */;
+			targetProxy = 96D9460929D7955A00D9C891 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96D9462F29D7955A00D9C891 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96D9463029D7955A00D9C891 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96D9463729D7955A00D9C891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96D9463829D7955A00D9C891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		96D9463A29D7955A00D9C891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RS4G7N7VG4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrumRollMachineExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DrumRollMachineExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BeatMachine.DrumRollMachine.DrumRollMachineExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DrumRollMachineExtension/Common/DrumRollMachineExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		96D9463B29D7955A00D9C891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RS4G7N7VG4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DrumRollMachineExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DrumRollMachineExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BeatMachine.DrumRollMachine.DrumRollMachineExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "DrumRollMachineExtension/Common/DrumRollMachineExtension-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		96D9463E29D7955A00D9C891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DrumRollMachine/DrumRollMachine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DrumRollMachine/Preview Content\"";
+				DEVELOPMENT_TEAM = RS4G7N7VG4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DrumRollMachine;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BeatMachine.DrumRollMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		96D9463F29D7955A00D9C891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DrumRollMachine/DrumRollMachine.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DrumRollMachine/Preview Content\"";
+				DEVELOPMENT_TEAM = RS4G7N7VG4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DrumRollMachine;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					AudioToolbox,
+					"-framework",
+					AVFoundation,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = BeatMachine.DrumRollMachine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		96D9464129D7955A00D9C891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RS4G7N7VG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BeatMachine.DrumRollMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrumRollMachine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DrumRollMachine";
+			};
+			name = Debug;
+		};
+		96D9464229D7955A00D9C891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RS4G7N7VG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BeatMachine.DrumRollMachineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrumRollMachine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DrumRollMachine";
+			};
+			name = Release;
+		};
+		96D9464429D7955A00D9C891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RS4G7N7VG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BeatMachine.DrumRollMachineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DrumRollMachine;
+			};
+			name = Debug;
+		};
+		96D9464529D7955A00D9C891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RS4G7N7VG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BeatMachine.DrumRollMachineUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = DrumRollMachine;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96D945C529D7955800D9C891 /* Build configuration list for PBXProject "DrumRollMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D9463729D7955A00D9C891 /* Debug */,
+				96D9463829D7955A00D9C891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96D9463929D7955A00D9C891 /* Build configuration list for PBXNativeTarget "DrumRollMachineExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D9463A29D7955A00D9C891 /* Debug */,
+				96D9463B29D7955A00D9C891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96D9463D29D7955A00D9C891 /* Build configuration list for PBXNativeTarget "DrumRollMachine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D9463E29D7955A00D9C891 /* Debug */,
+				96D9463F29D7955A00D9C891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96D9464029D7955A00D9C891 /* Build configuration list for PBXNativeTarget "DrumRollMachineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D9464129D7955A00D9C891 /* Debug */,
+				96D9464229D7955A00D9C891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96D9464329D7955A00D9C891 /* Build configuration list for PBXNativeTarget "DrumRollMachineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96D9464429D7955A00D9C891 /* Debug */,
+				96D9464529D7955A00D9C891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96D945C229D7955800D9C891 /* Project object */;
+}

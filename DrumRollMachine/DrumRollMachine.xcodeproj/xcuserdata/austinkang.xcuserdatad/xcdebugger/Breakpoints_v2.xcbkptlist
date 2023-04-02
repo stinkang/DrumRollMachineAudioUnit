@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7D6650B3-D4CD-4837-8CEF-6C7514C744F9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CED2630F-8857-4D81-8A68-12C10AC784C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "process(bufferStartTime, frameCount)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D16DC796-769A-444B-89CE-070979218BB4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "handleMIDIEventList(now, midiEvent)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44115844-CCC1-4B59-896A-47611C371012"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
+            landmarkName = "handleMIDIEventList(now, midiEvent)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "44115844-CCC1-4B59-896A-47611C371012 - c8b91329d72a3dde"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrumRollMachineExtensionDSPKernel::handleMIDIEventList(long long, AUMIDIEventList const*)"
+                  moduleName = "DrumRollMachineExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinkang/projects/DrumRollMachine/DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "44115844-CCC1-4B59-896A-47611C371012 - 507c5257155f4898"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrumRollMachineExtensionDSPKernel::handleMIDIEventList(long long, AUMIDIEventList const*)::&apos;lambda&apos;(void*, unsigned long long, MIDIUniversalMessage)::operator void (*)(void*, unsigned long long, MIDIUniversalMessage)() const"
+                  moduleName = "DrumRollMachineExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinkang/projects/DrumRollMachine/DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "44115844-CCC1-4B59-896A-47611C371012 - 1c25c833ff645e64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrumRollMachineExtensionDSPKernel::handleMIDIEventList(long long, AUMIDIEventList const*)::&apos;lambda&apos;(void*, unsigned long long, MIDIUniversalMessage)::__invoke(void*, unsigned long long, MIDIUniversalMessage)"
+                  moduleName = "DrumRollMachineExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinkang/projects/DrumRollMachine/DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "44115844-CCC1-4B59-896A-47611C371012 - 13cb6ae2c9651a75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrumRollMachineExtensionDSPKernel::handleMIDIEventList(long long, AUMIDIEventList const*)::&apos;lambda&apos;(void*, unsigned long long, MIDIUniversalMessage)::operator()(void*, unsigned long long, MIDIUniversalMessage) const"
+                  moduleName = "DrumRollMachineExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinkang/projects/DrumRollMachine/DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE385201-DEA6-442E-8537-7122273F9DE1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
+            landmarkName = "handleMIDIEventList(now, midiEvent)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BE385201-DEA6-442E-8537-7122273F9DE1 - c8b91329d72a3dde"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrumRollMachineExtensionDSPKernel::handleMIDIEventList(long long, AUMIDIEventList const*)"
+                  moduleName = "DrumRollMachineExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinkang/projects/DrumRollMachine/DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "BE385201-DEA6-442E-8537-7122273F9DE1 - 507c5257155f4898"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrumRollMachineExtensionDSPKernel::handleMIDIEventList(long long, AUMIDIEventList const*)::&apos;lambda&apos;(void*, unsigned long long, MIDIUniversalMessage)::operator void (*)(void*, unsigned long long, MIDIUniversalMessage)() const"
+                  moduleName = "DrumRollMachineExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinkang/projects/DrumRollMachine/DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "BE385201-DEA6-442E-8537-7122273F9DE1 - 1c25c833ff645e64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrumRollMachineExtensionDSPKernel::handleMIDIEventList(long long, AUMIDIEventList const*)::&apos;lambda&apos;(void*, unsigned long long, MIDIUniversalMessage)::__invoke(void*, unsigned long long, MIDIUniversalMessage)"
+                  moduleName = "DrumRollMachineExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinkang/projects/DrumRollMachine/DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "186"
+                  endingLineNumber = "186"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "BE385201-DEA6-442E-8537-7122273F9DE1 - 13cb6ae2c9651a75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrumRollMachineExtensionDSPKernel::handleMIDIEventList(long long, AUMIDIEventList const*)::&apos;lambda&apos;(void*, unsigned long long, MIDIUniversalMessage)::operator()(void*, unsigned long long, MIDIUniversalMessage) const"
+                  moduleName = "DrumRollMachineExtension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/austinkang/projects/DrumRollMachine/DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "187"
+                  endingLineNumber = "187"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F6E4343-0337-4C41-B34E-3E1985770CD2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "process(bufferStartTime, frameCount)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3E751D1-8C4D-4EB3-BA74-5EE2BB3A249D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "process(bufferStartTime, frameCount)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B590D8A3-B28E-4424-8EA7-0558188DBB04"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrumRollMachineExtension/DSP/DrumRollMachineExtensionDSPKernel.hpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "process(bufferStartTime, frameCount)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
